@@ -25,20 +25,25 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -84,19 +89,28 @@ body {
 	font-size: 100%;
 	color: #fff;
 	position: relative;
-	top: -.2em;
 	cursor: pointer;
+    font-size: 100%;
+	position: relative;
 } 
 
 .arrow-box{
-    border: 4px solid #fff ;
+    background-color: #000 ;
     align-items: center ;
     width: 5% ;
-    padding: 2.3rem 2.6rem ;
+    padding: 3.3rem 2.5rem ;
+    justify-items: center ;
+    text-align: center ;
+    margin: auto ;
+    border: 5px solid #fff ;
 }
 
 .ti-arrow-down{
-    font-size: 1.6rem ;
+    font-size: 1.8rem ;
+}
+
+.arrow-box .top i:first-child {
+    top: -200%;
 }
 
 #particles-js{
@@ -107,7 +121,6 @@ body {
 
 .panel-1{
     margin-top: 8.2rem ;
-    /* margin-bottom: 3rem ; */
 }
 
 img.logo {
@@ -143,10 +156,10 @@ img.logo {
 }
 
 #slideshow { 
-    margin: 0; 
+    margin: 0px; 
     position: relative; 
     height: 312px ; 
-    padding: 10px; 
+    padding: 0px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4) ; 
 }
   
@@ -173,13 +186,13 @@ img.logo {
 }
 
 .social-icons li a {
-    font-size: 12px;
-    line-height: 40px;
+    font-size: 16px;
+    line-height: 50px;
     position: relative ;
     display: block ;
     overflow: hidden ;
-    width: 40px ;
-    height: 40px ;
+    width: 50px ;
+    height: 50px ;
     -webkit-transition: all .2s ease 0s ;
     transition: all .2s ease 0s ;
     color: #000 ;
@@ -191,7 +204,7 @@ img.logo {
     /* "to left" / "to right" - affects initial color */
     background: linear-gradient(to left, white 50%, black 50%) right;
     background-size: 200%;
-    transition: .5s ease-out;
+    transition: .3s ease-out;
 }
 
 .social-icons li a:hover {
@@ -199,7 +212,7 @@ img.logo {
 }
 
 .social-icons li:hover a{
- color :white;
+    color :white;
 }
 
 .overlay {
@@ -212,27 +225,12 @@ img.logo {
     height: 100% ;
     -webkit-transition: all .2s ease 0s ;
     transition: all .2s ease 0s ;
-    /* background-color: #fff ; */
 }
 
 .social-icons li a:hover .overlay {
     right: 0 ;
     left: auto ;
     width: 0 ;
-}
-
-
-
-
-.overlay {
-    position: absolute ;
-    z-index: 1 ;
-    overflow: auto ;
-    width: 100% ;
-    height: 100% ;
-    -webkit-transition: all .8s ease ;
-    transition: all .8s ease ;
-    pointer-events: none ;
 }
 
 .container{
@@ -253,48 +251,126 @@ img.logo {
     margin-top: 2rem ;
     align-items: center ;
     justify-items: center ;
+    padding: 0 3.5rem;
 }
 
 input[type=text],
-input[type=phone],
-textarea {
-    width: 85% ;
-    padding: 16px 15px ;
+input[type=phone]{
+    width: 90% ;
+    padding: 24px 15px ;
     margin: 1rem auto ;
     box-sizing: border-box;
     background-color: #000 ;
     border-radius: 0 ;
 }
 
-textarea{
-    height: 10rem ;
+input[type=text]:focus,
+input[type=phone]:focus{
+    background-color: #000;
+    color: #fff;
+}
+
+.control-group>textarea{
+    height: 14rem ;
+    background-color: #000 ;
+    border-radius: 0 ;
+    width: 90% ;
+    padding: 16px 15px ;
+    margin: 1rem auto ;
+}
+
+.control-group>textarea:focus{
+    background-color: #000;
+    color: #fff;
+}
+
+.control-group>button>i{
+    font-size: 1.6rem;
 }
 
 .control-group>button[type=submit]
 {
     width: 70% ;
-    padding: 16px 60px ;
+    padding: 20px 60px ;
     border-radius: 0 ;
     margin-left: 2rem ;
+    align-items: center ;
+    justify-items: center ;
+    text-align: center ;
+    position: relative ;
+    overflow: hidden ;
+    -webkit-transition: all .2s ease 0s ;
+    transition: all .2s ease 0s ;
+    color: #000 ;
+    background: rgba(255, 255, 255, .06) ;
+    text-decoration: none ;
+    background: black; /* default color */
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, white 50%, black 50%) right;
+    background-size: 200%;
+    transition: .1s ease-out;
+}
+
+.control-group>button[type=submit]:hover{
+    background-position: left;
+    color :white;
+}
+
+input[type=email]{
+    width: 100% ;
+    padding: 17px 15px ;
+    margin: 1rem auto ;
+    box-sizing: border-box;
+    background-color: #000 ;
+    border-radius: 0 ;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+}
+
+input[type=email]:focus{
+    background-color: #000;
+    color: #fff;
 }
 
 .input-group-btn>button[type=submit]
 {
-    width: 50% ;
-    padding: 16px 42px ;
+    width: 100% ;
+    align-items: center ;
+    padding: 1.9rem 0rem ;
+    justify-items: center ;
+    text-align: center ;
+    margin: auto ;
     border-radius: 0 ;
     margin-left: 0 ;
+    position: relative ;
+    overflow: hidden ;
+    -webkit-transition: all .2s ease 0s ;
+    transition: all .2s ease 0s ;
+    color: #000 ;
+    background: rgba(255, 255, 255, .06) ;
+    text-decoration: none ;
+    background: black; /* default color */
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, white 50%, black 50%) right;
+    background-size: 200%;
+    transition: .1s ease-out;
+}
+
+.input-group-btn>button[type=submit]:hover {
+    background-position: left;
+    color :white;
 }
 
 .input-group>input[type=text]
 {
     width: 100% ;
-    padding: 15px 15px ;
+    padding: 13px 15px ;
     margin: 1rem 0 ;
     box-sizing: border-box;
     background-color: #000 ;
     border-radius: 0 ;
-    font-size: 12px ;
+    font-size: 13px ;
     color: #fff ;
 }
 
@@ -326,8 +402,13 @@ textarea{
     font-family: 'Open Sans',sans-serif;
 }
 
+.third-head{
+    font-family: 'Open Sans',sans-serif;
+}
+
 .third-head>h1{
-    font-size: 3.9rem; 
+    font-size: 5rem; 
+    padding-top: 1rem;
     text-align: center ;
     align-items: center ; 
     margin-bottom: 1.6rem ;
@@ -343,33 +424,35 @@ textarea{
 .messageLabel{
     margin-left: 2.8rem ;
     margin-bottom: .3rem ;
-    font-size: 13.5px ;
+    font-size: 19px;
+    font-weight: lighter;
     letter-spacing: 1px ;
+    line-height: 3rem;
     color: #ccc ;
 }
 
 .contact>p{
-    font-size: 12.5px ;
+    font-size: 17px ;
     margin-bottom: 0 ;
-    padding: 0 ;
-    letter-spacing: .05em ;
-    line-height: 1.5em ;
-    font-family: Raleway,sans-serif;
+    padding: 1rem 0 ;
+    letter-spacing: .05em;
+    line-height: 1.6em ;
     font-weight: 400;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
     text-align: center;
-    letter-spacing: 1px;
     color: #ccc ;
+    text-align: justify;
 }
 
 .up-arrow-box{
     background-color: #fff ;
     align-items: center ;
     width: 5% ;
-    padding: 2.5rem 0 ;
+    padding: 1.2rem 0 ;
     justify-items: center ;
     text-align: center ;
     margin: auto ;
+    transition: all .4s ease;
 }
 
 .go-top {
@@ -381,7 +464,18 @@ textarea{
 } 
 
 .ti-arrow-up{
-    font-size: 1.4rem ;
+    font-size: 2rem;
+}
+
+.up-arrow-box i{
+    font-weight: 400;
+    line-height: 70px;
+    text-align: center;
+}
+
+.up-arrow-box i:first-child {
+    -webkit-transform: translateY(200%);
+    transform: translateY(200%);
 }
 
 .container-third{
@@ -391,7 +485,7 @@ textarea{
 }
 
 .modal.left .modal-dialog {
-    position: fixed ;
+    position: fixed;
     margin: auto ;
     width: 320px ;
     height: 100% ;
@@ -433,8 +527,11 @@ textarea{
 }
 
 .demo {
-    width: 4% ;
-    z-index: 200 ;
+    width: 5% ;
+    z-index: 500 ;
+    left: -1;
+    position:sticky;
+    top: 40px;
 }
 
 .demo-btn{
@@ -442,9 +539,9 @@ textarea{
 }
 
 .btn-demo {
-	padding: 10px 14px ;
+	padding: 14px 18px ;
 	border-radius: 0 ;
-	font-size: 16px ;
+	font-size: 20px ;
 	background-color: #FFFFFF ;
 }
 
@@ -454,4 +551,6 @@ textarea{
 
 .btn-demo:hover{ 
     visibility: visible ;
+    color: #000;
+    background-color: #fff;
 }

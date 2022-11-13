@@ -23,6 +23,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -36,76 +37,77 @@
             </div>
         </div>
 
-        
-        <div class="demo">
-            <div class="demo-btn">
-                <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal">
-                    <span style="font-size: 1.4rem;" class="ti-settings panel-button"></span>
-                </button>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal left fade" id="myModal" tabindex="-1" role="dialog"
-                aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel">EXAMPLE OPTIONS</h4>
-                        </div>
-
-                        <div class="modal-body">
-                            <h4 class="pei">Particle Effect</h4>
-                            <div id="particle-effect" class="option-block">
-                                <p class="gravity-remove-button">Remove</p>
-                            </div>
-                            <h4>Overlay Scheme</h4>
-                            <div id="overlay-skin" class="option-block">
-                                <p class="overlay-skin-black nvb active">Black</p>
-                                <p class="overlay-skin-white nvb">White</p>
-                            </div>
-                            <h4>Overlay Animation</h4>
-                            <div id="overlay-animation" class="option-block">
-                                <p class="overlay-animation-fade nvb active">Fade</p>
-                                <p class="overlay-animation-slide nvb">Slide</p>
-                            </div>
-                            <h4>Overlay Content Animation</h4>
-                            <div id="overlay-content-animation" class="option-block">
-                                <p class="overlay-content-animation-fade nvb">Fade</p>
-                                <p class="overlay-content-animation-slide nvb active">Slide</p>
-                            </div>
-                            <h4>Overlay Bullet Navigation</h4>
-                            <div id="bullet-navigation" class="option-block">
-                                <p class="bullet-navigation-on nvb active">On</p>
-                                <p class="bullet-navigation-off nvb">Off</p>
-                            </div>
-                            <p class="bottom-line">* Change 50+ options via the included configuration file in
-                                your
-                                download
-                                package!
-                            </p>
-                        </div>
-
-                    </div><!-- modal-content -->
-                </div><!-- modal-dialog -->
-            </div><!-- modal -->
-        </div><!-- container -->
-
-        <section class="panel container-fluid" id="particles-js">
-            <div class="container-fluid">
+        <section class="panel container-fluid px-0" id="particles-js">
+            <div class="container-fluid px-0">
                 <div class="row justify-content-center panel-1">
                     <img class="col-2 logo" src="images/logo.png" alt="logo">
                 </div>
 
-                <div class="row">
+                <div class="demo">
+                    <div class="demo-btn">
+                        <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal">
+                            <span style="font-size: 2rem; padding-top: 1px;" class="ti-settings panel-button"></span>
+                        </button>
+                    </div>
+        
+                    <!-- Modal -->
+                    <div class="modal left fade" id="myModal" tabindex="-1" role="dialog"
+                        aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+        
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">EXAMPLE OPTIONS</h4>
+                                </div>
+        
+                                <div class="modal-body">
+                                    <h4 class="pei">Particle Effect</h4>
+                                    <div id="particle-effect" class="option-block">
+                                        <p class="gravity-remove-button">Remove</p>
+                                    </div>
+                                    <h4>Overlay Scheme</h4>
+                                    <div id="overlay-skin" class="option-block">
+                                        <p class="overlay-skin-black nvb active">Black</p>
+                                        <p class="overlay-skin-white nvb">White</p>
+                                    </div>
+                                    <h4>Overlay Animation</h4>
+                                    <div id="overlay-animation" class="option-block">
+                                        <p class="overlay-animation-fade nvb active">Fade</p>
+                                        <p class="overlay-animation-slide nvb">Slide</p>
+                                    </div>
+                                    <h4>Overlay Content Animation</h4>
+                                    <div id="overlay-content-animation" class="option-block">
+                                        <p class="overlay-content-animation-fade nvb">Fade</p>
+                                        <p class="overlay-content-animation-slide nvb active">Slide</p>
+                                    </div>
+                                    <h4>Overlay Bullet Navigation</h4>
+                                    <div id="bullet-navigation" class="option-block">
+                                        <p class="bullet-navigation-on nvb active">On</p>
+                                        <p class="bullet-navigation-off nvb">Off</p>
+                                    </div>
+                                    <p class="bottom-line">* Change 50+ options via the included configuration file in
+                                        your
+                                        download
+                                        package!
+                                    </p>
+                                </div>
+        
+                            </div><!-- modal-content -->
+                        </div><!-- modal-dialog -->
+                    </div><!-- modal -->
+                </div><!-- container -->
+
+                <div class="row mb-5">
                     <div class="cycle-wrapper" style="
                     position:  relative;
                     height: 312px; 
                     font-family: 'Open Sans', sans-serif !important;
-                    font-size: 8rem;
-                    font-weight: 600 !important;
+                    font-size: 10rem;
+                    font-weight: 800 !important;
                     margin: 0 auto !important;
-                    text-align: center !important;">
+                    text-align: center !important;
+                    line-height: 100%;
+                    letter-spacing: .02em;">
                         <div id="slideshow">
                             <div class="slide cycle-slide">
                                 <h1 style="top: 312px; left: 0px; z-index: 99; opacity: 1; display: block;">
@@ -126,57 +128,55 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-center mt-5 mx-auto">
-                    <p style="font-size:16px; text-align: center; font-family: Raleway, 'sans-serif';"
-                        class="justify-content-center mb-4">OUR WEBSITE IS
+                <div class="row justify-content-center mx-auto">
+                    <p style="font-size:24px; text-align: center; font-family: Raleway, 'sans-serif';"
+                        class="justify-content-center mb-4 pt-5 mt-5">OUR WEBSITE IS
                         COMING SOON</p>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center mt-5 pt-5">
                     <div class="col-1 arrow-box top">
-                        <i class="ti-arrow-down"></i>
+                        <i class="ti-arrow-down ms-auto"></i>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid panel" id="particles-js">
+        <section class="container-fluid panel p-0" id="particles-js">
             <div class="row justify-content-center mx-5 px-5">
                 <div class="col-1 up-arrow-box go-top">
-                    <i class="ti-arrow-up"></i>
+                    <i class="ti-arrow-up"></i>          
                 </div>
             </div>
             <div class="container-mid container mt-5 pt-5">
                 <div class="row justify-content-center mt-5 pt-5 sec_head">
-                    <h1 class="pe-2 align-self-center"
-                        style="font-size: 3rem; text-align: center; align-items: center;">OUR WEBSITE IS COMING SOON
+                    <h1 class="pe-2 align-self-center pt-5 mt-4"
+                        style="font-size: 5rem; text-align: center; align-items: center; letter-spacing: .04em;">OUR WEBSITE IS COMING SOON
                     </h1>
-                    <div class="col-6 mt-5">
-                        <p style="align-items: center; text-align: left;
-                            font-size: 12.5px;
+                    <div class="col-8 mt-4">
+                        <p style="align-items: center; 
+                            text-align: left;
+                            padding: 0 4px;
+                            font-size: 17px;
                             line-height: 1.6em;
-                            letter-spacing: .02em;
                             margin: 0 auto 38px auto;
                             text-align: justify;
                             color: #ccc;                      
                             font-family: 'Open Sans',sans-serif;">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                            dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-            
-                            eu,
+                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
                         </p>
                     </div>
                     <form action="" method="post" class="subscribe-form justify-content-center">
                         <div class="row justify-content-center">
-                            <div class="col-4 pt-5">
+                            <div class="col-5 px-0">
                                 <div class="input-group">
-                                    <input type="text" name="email" placeholder=" Enter your email to Subscribe!"
+                                    <input type="email" name="email" placeholder="* Enter your email to Subscribe!"
                                         class="email form-control">
                                 </div>
                             </div>
-                            <div class="col-1 pt-5">
+                            <div class="col-1 px-0">
                                 <div class="input-group-btn mt-3">
                                     <button type="submit" class="form-control">
-                                        <i class="ti-arrow-right" style="font-size: 1.2rem;"></i>
+                                        <i class="ti-arrow-right" style="font-size: 1.5rem;"></i>
                                     </button>
                                 </div>
                             </div>
@@ -203,7 +203,7 @@
 
         </section>
 
-        <section class="container-fluid panel" id="particles-js">
+        <section class="container-fluid panel p-0" id="particles-js">
             <div class="row justify-content-center mx-5 px-5">
                 <div class="col-1 up-arrow-box go-top">
                     <i class="ti-arrow-up"></i>
@@ -214,25 +214,25 @@
                     <h1 class="pe-2">CONTACT</h1>
                     <div class="col-3 contact px-4">
                         <p class="mt-3" style="align-items: center; text-align: left; justify-items: center;">
-                            Want to say hello? Want to know more about us? Drop us an email and we will get back to you
+                            Want &nbsp;to say &nbsp;hello? Want to &nbsp;know more about &nbsp;us? Drop us an email and we will get back to you
                             as soon as we can.
                         </p>
                     </div>
                     <form class="justify-content-center" id="contact-form" action="assets/php/contact.php"
                         method="post">
-                        <div class="control-group col-4 px-5">
+                        <div class="control-group col-4">
                             <label class="nameLabel">NAME</label>
                             <input id="contact-form-name" type="text" name="name" class="form-control">
                         </div>
-                        <div class="control-group col-4 px-5">
+                        <div class="control-group col-4">
                             <label class="emailLabel">EMAIL</label>
                             <input id="contact-form-email" type="text" name="email" class="form-control">
                         </div>
-                        <div class="control-group col-4 px-5">
+                        <div class="control-group col-4">
                             <label class="messageLabel">MESSAGE</label>
                             <textarea id="contact-form-message" name="message" class="form-control"></textarea>
                         </div>
-                        <div class="control-group col-2 px-4 mt-5">
+                        <div class="control-group col-2 px-4 pt-4 mt-5">
                             <button type="submit" class="form-control">
                                 <i class="ti-arrow-right"></i>
                             </button>
@@ -242,6 +242,8 @@
             </div>
         </section>
     </div>
+
+    
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
@@ -256,6 +258,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script>
         $("#slideshow > div:gt(0)").hide();
@@ -267,6 +270,10 @@
         .end()
         .appendTo('#slideshow');
         }, 3000);
+    </script>
+
+    <script>
+        AOS.init();
     </script>
 
 </body>
